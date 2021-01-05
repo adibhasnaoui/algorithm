@@ -1,8 +1,9 @@
 ALGORITHM three_nb_sum
 VAR
 sentence [200] : string;
+n = sentence.length ;
   i :integer ;
-   vowels =["a","e","i","o","u"] integer;  
+   vowels =["a","e","i","o","u"] : integer;  
 BEGIN
 for (i = 0; sentence[i] != '\0'; i++) 
         { 
@@ -11,7 +12,9 @@ for (i = 0; sentence[i] != '\0'; i++)
                 vowels+ = 1; 
             } 
         } 
-        printf("There are %d vowels in the given sentence\n",vowels); 
+        read("There are %d vowels in the given sentence\n",vowels);
+        read("There are %d characters in the sentence",n);
+
     }
     
 END
